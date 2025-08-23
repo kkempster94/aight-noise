@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64">
+  <title>Aight Noise Favicon (AN with Wave)</title>
+  <defs>
+    <style><![CDATA[
+      .bg { fill: #111111; }
+      .txt { fill: #ffffff; font: 800 34px/1 "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; letter-spacing: 1px; }
+      .wave { fill: none; stroke: #ffffff; stroke-width: 3; stroke-linecap: round; }
+    ]]></style>
+  </defs>
+  <rect class="bg" x="2" y="2" width="60" height="60" rx="12" />
+  <text class="txt" x="50%" y="45%" dominant-baseline="central" text-anchor="middle">AN</text>
+  <path class="wave" d="M16 46 q4 4 8 0 t8 0 t8 0 t8 0" />
+</svg>

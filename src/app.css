@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+/* Custom range input styling for better cross-browser support */
+input[type='range'] {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: #57534e;
+	cursor: pointer;
+	border: 2px solid #f5f5f4;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	transition: all 0.2s ease;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+	background: #44403c;
+	transform: scale(1.1);
+}
+
+input[type='range']::-moz-range-thumb {
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: #57534e;
+	cursor: pointer;
+	border: 2px solid #f5f5f4;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	transition: all 0.2s ease;
+}
+
+input[type='range']::-moz-range-thumb:hover {
+	background: #44403c;
+	transform: scale(1.1);
+}
+
+.dark input[type='range']::-webkit-slider-thumb {
+	background: #a8a29e;
+	border: 2px solid #292524;
+}
+
+.dark input[type='range']::-webkit-slider-thumb:hover {
+	background: #d6d3d1;
+}
+
+.dark input[type='range']::-moz-range-thumb {
+	background: #a8a29e;
+	border: 2px solid #292524;
+}
+
+.dark input[type='range']::-moz-range-thumb:hover {
+	background: #d6d3d1;
+}
+
+/* Vertical slider specific styles */
+.vertical-slider::-webkit-slider-thumb {
+	height: 20px;
+	width: 12px;
+	border-radius: 6px;
+	background: #44403c;
+	border: 1px solid #f5f5f4;
+}
+
+.vertical-slider::-webkit-slider-thumb:hover {
+	background: #292524;
+	transform: scale(1.05);
+}
+
+.dark .vertical-slider::-webkit-slider-thumb {
+	background: #d6d3d1;
+	border: 1px solid #57534e;
+}
+
+.dark .vertical-slider::-webkit-slider-thumb:hover {
+	background: #f5f5f4;
+}
+
+.vertical-slider::-moz-range-thumb {
+	height: 20px;
+	width: 12px;
+	border-radius: 6px;
+	background: #44403c;
+	border: 1px solid #f5f5f4;
+}
+
+.vertical-slider::-moz-range-thumb:hover {
+	background: #292524;
+}
+
+.dark .vertical-slider::-moz-range-thumb {
+	background: #d6d3d1;
+	border: 1px solid #57534e;
+}
+
+.dark .vertical-slider::-moz-range-thumb:hover {
+	background: #f5f5f4;
+}
