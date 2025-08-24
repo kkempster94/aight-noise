@@ -1,5 +1,6 @@
 import * as Tone from 'tone';
 import type { NoiseSource } from './types.js';
+import { generateUUID } from '../utils/uuid.js';
 
 export class OceanNoise implements NoiseSource {
 	id: string;
@@ -21,7 +22,7 @@ export class OceanNoise implements NoiseSource {
 	private modulatedGain: Tone.Gain;
 
 	constructor(masterGain: Tone.Gain) {
-		this.id = crypto.randomUUID();
+		this.id = generateUUID();
 		this.gain = new Tone.Gain(0.5);
 		this.mixGain = new Tone.Gain(1);
 		this.modulatedGain = new Tone.Gain(0.7);

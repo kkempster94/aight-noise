@@ -1,6 +1,7 @@
 import * as Tone from 'tone';
 import type { NoiseSource } from './types.js';
 import { OceanNoise } from './ocean-noise.js';
+import { generateUUID } from '../utils/uuid.js';
 
 export class NoiseManager {
 	private sources: Map<string, NoiseSource> = new Map();
@@ -24,7 +25,7 @@ export class NoiseManager {
 			throw new Error(`Unknown complex noise type: ${type}`);
 		}
 
-		const id = crypto.randomUUID();
+		const id = generateUUID();
 		const noise = new Tone.Noise(type as Tone.NoiseType);
 		const gain = new Tone.Gain(0.5);
 
