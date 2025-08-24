@@ -4,6 +4,14 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit()],
+	build: {
+		target: [
+			'chrome92',
+			'firefox95', 
+			'safari15.4',
+			'edge92'
+		]
+	},
 	test: {
 		expect: { requireAssertions: true },
 		projects: [

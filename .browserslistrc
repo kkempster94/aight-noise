@@ -1,0 +1,9 @@
+# Modern browsers that support crypto.randomUUID (released in the last 2 years)
+last 2 years
+not dead
+not < 0.25%
+# Specific versions that support crypto.randomUUID
+Chrome >= 92
+Firefox >= 95
+Safari >= 15.4
+Edge >= 92
